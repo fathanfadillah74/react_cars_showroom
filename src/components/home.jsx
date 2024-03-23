@@ -9,6 +9,7 @@ function Home() {
   const filterCars = (inputUser, category) => {
     const filtered = cars.filter((car) => {
       const carProperty = car[category].toLowerCase();
+      console.log("🚀 ~ filtered ~ carProperty:", carProperty)  
       return carProperty.includes(inputUser);
     });
     setFilteredCars(filtered);
